@@ -1,0 +1,55 @@
+.main {
+  text-align: center;
+}
+.sub-title {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.38;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-theatre .title {
+  padding-top: 80px;
+}
+
+.theatre {
+  margin-top: 60px;
+}
+
+.about-theatre .description {
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+.number {
+  margin-top: 27px;
+}
+
+.about-number-list {
+  margin-left: 82px;
+  margin-right: 82px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  text-align: start;
+  & svg {
+    fill: #ffffff;
+  }
+
+  & p {
+    font-family: "Open Sans Condensed";
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.05em;
+
+    margin-top: 15px;
+  }
+
+  &:last-child {
+    margin-right: 150px;
+  }
+}

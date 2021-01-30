@@ -1,0 +1,19 @@
+/* Стили для всего документа */
+.container-box {
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 576px) {
+    width: 576px;
+  }
+
+  @media (min-width: 730px) {
+    width: 730px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+  }
+}
