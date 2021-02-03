@@ -1,12 +1,11 @@
 /* Стили для всего документа */
 .container-box {
-  padding-left: 33px;
-  padding-right: 33px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 
-  @media (min-width: 576px) {
-    width: 576px;
+  @media (min-width: 550px) {
+    width: 550px;
   }
 
   @media (min-width: 730px) {

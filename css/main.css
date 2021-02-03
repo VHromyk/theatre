@@ -437,15 +437,14 @@ button {
 
 /* Стили для всего документа */
 .container-box {
-  padding-left: 33px;
-  padding-right: 33px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 550px) {
   .container-box {
-    width: 576px;
+    width: 550px;
   }
 }
 
@@ -470,8 +469,9 @@ button {
 }
 
 .header-nav {
-  position: absolute;
-  top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
 }
 
 .header-nav-list {
@@ -500,23 +500,22 @@ button {
   text-transform: uppercase;
   border-bottom: 2px solid #d1a954;
   width: 120px;
-  margin-left: 351px;
 }
 
 .header-title {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
-  font-size: 63px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 197px;
+  margin-top: 107px;
 }
 
 .header-description {
   line-height: 1.5;
   margin-top: 50px;
+  white-space: normal;
 }
 
 .header-btn {
@@ -534,21 +533,13 @@ button {
   margin-top: 49px;
 }
 
-@media (max-width: 575px) {
-  .header-title {
-    font-size: 50px;
-  }
-}
-
 @media (max-width: 767px) {
   .header-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
 
-.main {
+.about-theater {
   text-align: center;
 }
 
@@ -561,37 +552,33 @@ button {
   text-transform: uppercase;
 }
 
-.about-theatre .title {
-  padding-top: 80px;
-}
-
-.theatre {
+.theater {
   margin-top: 60px;
 }
 
-.about-theatre .description {
+.about-theater .description {
   line-height: 1.5;
   margin-top: 40px;
+}
+
+.about-theater .title {
+  padding-top: 80px;
 }
 
 .number {
   margin-top: 27px;
 }
 
-.about-number-list {
-  margin-left: 82px;
-  margin-right: 82px;
-  display: flex;
-  justify-content: flex-start;
+.about-svg-list {
   margin-top: 40px;
-  text-align: start;
+  text-align: center;
 }
 
-.about-number-list svg {
+.about-svg-list svg {
   fill: #ffffff;
 }
 
-.about-number-list p {
+.about-svg-list p {
   font-family: "Open Sans Condensed";
   font-weight: 700;
   font-size: 16px;
@@ -600,7 +587,123 @@ button {
   margin-top: 15px;
 }
 
-.about-number-list:last-child {
-  margin-right: 150px;
+.our-performance .title {
+  margin-top: 80px;
+}
+
+.carousel {
+  margin-top: 80px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 575px) {
+  .about-svg-list {
+    align-items: center;
+  }
+  .about-svg-list li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.our-performance {
+  text-align: center;
+}
+
+.best-theater {
+  position: relative;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../image/best-theatre.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.best-theater .list {
+  text-align: center;
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d1a954;
+}
+
+.best-theater-svg {
+  height: 24px;
+  margin-top: 80px;
+}
+
+.best-theater .list {
+  text-align: center;
+}
+
+.best-theater-desc {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+.best-theater-container {
+  margin-top: 40px;
+}
+
+.theater-partners .title {
+  margin-top: 80px;
+}
+
+@media (min-width: 576px) {
+  .best-theater-svg {
+    position: absolute;
+    left: 180px;
+    top: 190px;
+  }
+  .best-theater-container {
+    display: flex;
+  }
+  .best-theater-desc {
+    position: absolute;
+    margin-top: 239px;
+    margin-left: 180px;
+    text-align: left;
+    width: 330px;
+  }
+}
+
+.slider-element {
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+
+.slider-element img {
+  width: 200px;
+  height: 97px;
+}
+
+.slider-element .first {
+  margin-bottom: 80px;
+}
+
+.theater-partners .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 575px) {
+  .large-slider {
+    display: none;
+  }
+  .carousel {
+    margin-top: 50px;
+  }
+  .carousel {
+    margin: 0;
+  }
+  .carousel-item .first {
+    margin-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.slider-element {
+  margin-bottom: 80px;
+  margin-top: 60px;
+  & img {
+    width: 200px;
+    height: 97px;
+  }
+  & .first {
+    margin-bottom: 80px;
+  }
+}
+
+.theater-partners .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 575px) {
+  .large-slider {
+    display: none;
+  }
+  .carousel {
+    margin-top: 50px;
+  }
+  .carousel {
+    margin: 0;
+  }
+  .carousel-item .first {
+    margin-bottom: 60px;
+  }
+}
