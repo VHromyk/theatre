@@ -1,6 +1,7 @@
-.main {
+.about-theater {
   text-align: center;
 }
+
 .sub-title {
   font-family: "Open Sans Condensed";
   font-weight: 700;
@@ -10,30 +11,27 @@
   text-transform: uppercase;
 }
 
-.about-theatre .title {
-  padding-top: 80px;
-}
-
-.theatre {
+.theater {
   margin-top: 60px;
 }
 
-.about-theatre .description {
+.about-theater .description {
   line-height: 1.5;
   margin-top: 40px;
+}
+
+.about-theater .title {
+  padding-top: 80px;
 }
 
 .number {
   margin-top: 27px;
 }
 
-.about-number-list {
-  margin-left: 82px;
-  margin-right: 82px;
-  display: flex;
-  justify-content: flex-start;
+.about-svg-list {
   margin-top: 40px;
-  text-align: start;
+  text-align: center;
+
   & svg {
     fill: #ffffff;
   }
@@ -49,7 +47,25 @@
     margin-top: 15px;
   }
 
-  &:last-child {
-    margin-right: 150px;
+  // & li:last-child {
+  //   margin-left: 60px;
+  // }
+}
+
+.our-performance .title {
+  margin-top: 80px;
+}
+
+.carousel {
+  margin-top: 80px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 575px) {
+  .about-svg-list {
+    align-items: center;
+    & li:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }
