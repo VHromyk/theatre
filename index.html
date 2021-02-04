@@ -38,7 +38,7 @@
         <p class="header-description">
           Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
         </p>
-        <button class="header-btn" type="button">Афиша</button>
+        <button class="btn" type="button">Афиша</button>
       </div>
     </header>
     <main class="main">
@@ -155,21 +155,36 @@
     </div>
   </div>
 </div>
-      </section class= "our-patrons">
-      <div class="container-box">
-        <h2 class="title"><span class="title-part">Стать</span> меценатом</h2>
-        <input type="text" placeholder="Имя"></input>
-        <input type="text" placeholder="Компания"></input>
-        <input type="tel" placeholder="Телефон"></input>
-        <input type="email" placeholder="E-mail"></input>
-        <textarea placeholder="Сообщение"></textarea>
-      </div>
-      <section>
-
-      </section>
-
+</section>
     </main>
-    <footer></footer>
+         <footer class="our-patrons">
+        <div class="container-box">
+        <h2 class="title"><span class="title-part">Стать</span> меценатом</h2>
+        <ul class="our-patrons-list">
+      <li><input type="text" placeholder="Имя"></input></li>
+      <li><input type="text" placeholder="Компания"></input></li>
+      <li><input type="tel" placeholder="Телефон"></input></li>
+      <li><input type="email" placeholder="E-mail"></input></li>
+    </ul>
+        <textarea placeholder="Сообщение" class="our-patrons-textarea"></textarea>
+        <button class="btn" type="button">Отправить</button>
+        <p class ="description">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
+         <div class="adress">
+        <ul class="phone-list">
+        <li class="phone-list-item">+7 (812) 123-45-55</li>
+        <li phone-list-item>+7 (812) 123-45-66</li>
+      </ul>
+      <ul class="adress-list">
+        <li class="adress-list-item">info@theater.ru</li>
+        <li class="adress-list-item">г. санкт-петербург, невский 140</li>
+      </ul>
+      </div>
+      <div class="underfooter">
+        <p class="security">(с) Все права защищены. Большой театр. 2020</p>
+        <p class="developer">Разработано d-e-n.ru</p>
+      </div>
+      </div>
+    </footer>
     <script src="./js/siema.min.js"></script>
     <script>
       new Siema({});
