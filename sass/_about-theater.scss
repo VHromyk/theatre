@@ -46,10 +46,6 @@
 
     margin-top: 15px;
   }
-
-  // & li:last-child {
-  //   margin-left: 60px;
-  // }
 }
 
 .our-performance .title {
@@ -57,7 +53,7 @@
 }
 
 .carousel {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 75px;
 }
 
@@ -66,6 +62,17 @@
     align-items: center;
     & li:not(:last-child) {
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .about-svg-list {
+    display: flex;
+    justify-content: center;
+
+    & li:not(:last-child) {
+      margin-right: 50px;
     }
   }
 }

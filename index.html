@@ -19,6 +19,7 @@
     <title>Theatre</title>
   </head>
   <body>
+       <!-- секция header -->
     <header class="header">
       <div class="container-box">
         <nav class="header-nav">
@@ -85,6 +86,7 @@
       </div>
     </header>
     <main class="main">
+       <!-- секция О театре -->
       <section class="about-theater container-box">
         <h2 class=" title"><span class="title-part">О</span> театре</h2>
         <h3 class="sub-title theater">Самый лучший театр СПБ</h3>
@@ -99,6 +101,7 @@
           основываясь на других свидетельствах, годом открытия можно считать
           1784 год.
         </p>
+         <!-- подсекция Немного о цифрах -->
         <h3 class="sub-title number">Немного о цифрах</h3>
         <ul class="about-svg-list">
           <li class="first">
@@ -117,7 +120,7 @@
       </section>
       <section class="our-performance container-box">
         <h2 class="title"><span class="title-part">Наши</span> постановки</h2>
-     
+     <!-- карусель наших постановок -->
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -149,12 +152,9 @@
   </a>
 </div>
       </section>
+        <!-- секция Лучший театр -->
       <section class="best-theater">
         <div class="container-box">
-            <svg class="best-theater-svg">
-          <use href="./image/sprite.svg#stars"></use>
-        </use>
-      </svg>
           <div class="best-theater-container">
             <ul class="list">
           <li>2018</li>
@@ -165,8 +165,10 @@
           </div>
           </div>
       </section>
+      <!-- секция Партнеры театра -->
       <section class="theater-partners container-box">
         <h2 class="title"><span class="title-part">Партнеры</span> театра</h2>
+        <!-- Siema slider партнеров театра -->
            <div class="siema large-slider">
           <div class="slider-element">
             <img class ="first" src="./image/logo.png" alt="1-slider-el">
@@ -186,18 +188,6 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <!-- Карусель компаний которые являються нашими клиентами -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100 first" src="./image/logo.png" alt="First slide">
-      <img class="d-block w-100 second" src="./image/logo.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 first" src="./image/logo.png" alt="First slide">
-      <img class="d-block w-100 second" src="./image/logo.png" alt="Second slide">
-    </div>
-  </div>
-</div>
 </section>
     </main>
          <footer class="our-patrons">
@@ -230,8 +220,7 @@
     </footer>
     <script src="./js/index.js"></script>
     <script src="./js/siema.min.js"></script>
-    <script>
-      new Siema({});
+    <script src="./js/siema.js">
     </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
