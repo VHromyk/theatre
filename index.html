@@ -22,9 +22,12 @@
     <header class="header">
       <div class="container-box">
         <nav class="header-nav">
-          <svg class="header-nav-svg">
+          <button class="menu-btn-open">
+            <svg class="header-nav-svg">
             <use href="./image/sprite.svg#menu"></use>
           </svg>
+          </button>
+          <div class="header-nav-wrap is-close">
           <ul class="header-nav-list">
             <li><a href="#">Главная</a></li>
             <li><a href="#">О театре</a></li>
@@ -32,6 +35,46 @@
             <li><a href="#">Партнеры театра</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
+          <ul class="social-list">
+            <li>
+              <a href="#">  
+                <svg width = '26' height = '45'>
+                <use href="./image/sprite.svg#facebook">
+                </use>
+              </svg>
+            </a>
+            </li>
+           <li>
+              <a href="#">  
+                <svg width = '45' height = '45'>
+                <use href="./image/sprite.svg#instagram">
+                </use>
+              </svg>
+            </a>
+            </li>
+            <li>
+              <a href="#">  
+                <svg width = '45' height = '45'>
+                <use href="./image/sprite.svg#youtube">
+                </use>
+              </svg>
+            </a>
+            </li>
+            <li>
+              <a href="#">  
+                <svg width = '45' height = '45'>
+                <use href="./image/sprite.svg#vk">
+                </use>
+              </svg>
+            </a>
+            </li>
+          </ul>
+          <button class="menu-btn-close">
+            <svg width ='16' height ='16' class="header-nav-svg">
+            <use href="./image/sprite.svg#close"></use>
+          </svg>
+          </button>
+          </div>
           <a hreg="#" class="nav-phone">+7 495 123-45-67</a>
         </nav>
         <h1 class="header-title">Большой театр</h1>
@@ -185,6 +228,7 @@
       </div>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
     <script src="./js/siema.min.js"></script>
     <script>
       new Siema({});

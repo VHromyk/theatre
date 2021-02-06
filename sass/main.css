@@ -402,19 +402,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #d1a954;
 }
 
 ul {
@@ -443,7 +436,9 @@ input {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.38;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -489,6 +484,7 @@ input {
 
 .header {
   position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.85)), to(rgba(51, 51, 51, 0.85))), url(../image/conference.jpg);
   background-image: linear-gradient(rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../image/conference.jpg);
   background-size: cover;
   background-position: center;
@@ -496,69 +492,22 @@ input {
 }
 
 .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 50px;
 }
 
-.header-nav-wrap {
-  height: 800px;
-  width: 300px;
-  background-color: #333333;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.header-nav .header-nav-list {
+.header-nav-list {
   display: none;
-  padding-top: 140px;
-  padding-left: 39px;
-}
-
-.header-nav-list li a {
-  font-family: "Open Sans Condensed";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.38;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.header-nav-list li a:hover, .header-nav-list li a:focus {
-  color: #d1a954;
-}
-
-.social-list {
-  margin-top: 89px;
-  margin-left: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 140px;
-}
-
-.social-list li:nth-child(odd) {
-  margin-right: 50px;
-}
-
-.social-list li:nth-child(-n + 2) {
-  margin-bottom: 50px;
-}
-
-.social-list li svg {
-  fill: #ffffff;
-}
-
-.social-list li svg:hover, .social-list li svg:focus {
-  fill: #d1a954;
 }
 
 .header-nav-svg {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   z-index: 1001000;
   fill: #ffffff;
   cursor: pointer;
@@ -566,6 +515,7 @@ input {
 
 .header-nav-svg:hover {
   fill: #d1a954;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -600,43 +550,11 @@ input {
   margin-top: 49px;
 }
 
-.menu-btn-close {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  top: 30px;
-  left: 238px;
-}
-
-.menu-btn-close svg {
-  margin: auto;
-}
-
-.is-open {
-  transform: translateX(0%);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.58, 0.21, 0.83, 0.67);
-  transition-delay: 400ms;
-}
-
-.is-close {
-  transform: translateX(-100%);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.58, 0.21, 0.83, 0.67);
-  transition-delay: 400ms;
-}
-
 @media (max-width: 767px) {
   .header-nav {
-    align-items: center;
-  }
-  .header-nav .header-nav-list {
-    display: block;
-  }
-  .header-nav-list li:not(:last-child) {
-    margin-bottom: 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -699,7 +617,9 @@ input {
 
 @media (max-width: 575px) {
   .about-svg-list {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about-svg-list li:not(:last-child) {
     margin-bottom: 40px;
@@ -712,6 +632,7 @@ input {
 
 .best-theater {
   position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.85)), to(rgba(51, 51, 51, 0.85))), url(../image/best-theatre.jpg);
   background-image: linear-gradient(rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../image/best-theatre.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -763,6 +684,8 @@ input {
     top: 190px;
   }
   .best-theater-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .best-theater-desc {
@@ -840,8 +763,22 @@ input {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #989898;
+}
+
+.our-patrons input::-webkit-input-placeholder {
+  padding-left: 15px;
+}
+
+.our-patrons input:-ms-input-placeholder {
+  padding-left: 15px;
+}
+
+.our-patrons input::-ms-input-placeholder {
+  padding-left: 15px;
 }
 
 .our-patrons input::placeholder {
@@ -866,6 +803,21 @@ input {
   width: 100%;
   height: 100px;
   color: #ffffff;
+}
+
+.our-patrons-textarea::-webkit-input-placeholder {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.our-patrons-textarea:-ms-input-placeholder {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.our-patrons-textarea::-ms-input-placeholder {
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .our-patrons-textarea::placeholder {
