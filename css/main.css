@@ -396,6 +396,10 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333333;
   color: #ffffff;
@@ -833,7 +837,6 @@ input {
 }
 
 .slider-element {
-  margin-bottom: 80px;
   margin-top: 60px;
 }
 
@@ -848,7 +851,6 @@ input {
 
 .theater-partners .title {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .carousel-item .first {
@@ -897,28 +899,27 @@ input {
 .our-patrons .description {
   font-size: 12px;
   line-height: 1.5;
-  max-width: 390px;
+  max-width: 435px;
   color: #989898;
 }
 
+.our-patrons .btn {
+  margin-top: 40px;
+}
+
 .our-patrons input {
+  display: block;
   background: #444444;
-  border-style: 1px solid #97979701;
+  border-style: solid;
+  border-width: 1px;
   width: 230px;
   height: 35px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   align-items: center;
+  padding-left: 15px;
   color: #989898;
-}
-
-.our-patrons input::placeholder {
-  padding-left: 15px;
-}
-
-.our-patrons input:hover, .our-patrons input:focus {
-  padding-left: 15px;
 }
 
 .our-patrons-list {
@@ -928,21 +929,12 @@ input {
 .our-patrons-textarea {
   margin-top: 30px;
   background: #444444;
-  border-style: 1px solid #97979701;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   width: 100%;
   height: 100px;
   color: #ffffff;
-}
-
-.our-patrons-textarea::placeholder {
-  padding-left: 15px;
-  padding-top: 10px;
-}
-
-.our-patrons-textarea:focus, .our-patrons-textarea:hover {
   padding-left: 15px;
   padding-top: 10px;
 }
@@ -965,23 +957,18 @@ input {
   color: #989898;
 }
 
-.underfooter .developer {
-  padding-bottom: 30px;
-  margin-top: 20px;
-}
-
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .our-patrons {
     text-align: center;
-  }
-  .our-patrons .btn {
-    margin-top: 40px;
   }
   .our-patrons .description {
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+@media (max-width: 575px) {
   .our-patrons-list {
     text-align: center;
   }
@@ -1003,6 +990,51 @@ input {
   .underfooter {
     max-width: 504px;
     text-align: center;
+  }
+  .underfooter .developer {
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .our-patrons-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .our-patrons-list li:nth-child(odd) {
+    margin-right: 49px;
+  }
+  .our-patrons-textarea {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 509px;
+    display: block;
+  }
+  .our-patrons-list li:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+  .adress {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .phone-list li:last-child {
+    margin-top: 25px;
+  }
+  .adress-list {
+    text-align: end;
+  }
+  .adress-list li:last-child {
+    margin-top: 25px;
+  }
+  .underfooter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .underfooter p {
+    padding-bottom: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
