@@ -14,6 +14,6 @@ menuCloseRef.addEventListener("click", () => {
 });
 
 if (document.documentElement.clientWidth < 1920) {
-  ourPerformanceRef.classList.add("container-box");
-  ourPerformanceRef.classList.remove("large-container");
+  ourPerformanceRef.classList.toggle("container-box");
+  ourPerformanceRef.classList.toggle("large-container");
 }
