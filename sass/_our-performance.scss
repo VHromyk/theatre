@@ -6,16 +6,30 @@
   margin-top: 80px;
 }
 
-.carousel-item {
+.our-performance-el {
   height: 550px;
   width: 442px;
+}
+
+.large-container {
+  margin-left: 150px;
+}
+
+@media (max-width: 767px) {
+  .our-performance-carousel {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 768px) {
   .our-performance .title {
     margin-top: 90px;
   }
-  .carousel-item {
+  .our-performance-carousel {
+    margin-top: 100px;
+  }
+
+  .our-performance-el {
     height: 550px;
     width: 442px;
   }
