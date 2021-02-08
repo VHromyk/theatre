@@ -31,7 +31,7 @@
 }
 
 .our-patrons-list {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .our-patrons-textarea {
@@ -66,20 +66,12 @@
   color: #989898;
 }
 
-@media (max-width: 767px) {
-  .our-patrons {
-    text-align: center;
-    .description {
-      margin-top: 30px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-}
-
 @media (max-width: 575px) {
   .our-patrons-list {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .our-patrons-list li:not(:last-child) {
     margin-bottom: 30px;
@@ -105,6 +97,7 @@
     }
   }
 }
+
 @media (min-width: 576px) {
   .our-patrons-list {
     display: flex;
@@ -144,5 +137,74 @@
     p {
       padding-bottom: 30px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-patrons {
+    text-align: center;
+    .description {
+      margin-top: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .our-patrons .btn {
+    margin-top: 0px;
+  }
+  .our-patrons .title {
+    margin-top: 90px;
+  }
+  .our-patrons .description {
+    width: 390px;
+  }
+  .our-patrons-list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    & li:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+  .our-patrons-list input {
+    width: 180px;
+  }
+  .our-patrons-wrapper {
+    display: flex;
+  }
+  .our-patrons-textarea {
+    margin-top: 60px;
+    max-width: 270px;
+  }
+  .description-wrap {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .adress {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .adress {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .adress-list {
+    margin-top: 25px;
+    text-align: start;
+  }
+  .footer-wrapper-first {
+    width: 730px;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }

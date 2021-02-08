@@ -56,3 +56,15 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .theater-partners .title {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .theater-partners .title {
+    margin-top: 150px;
+  }
+}

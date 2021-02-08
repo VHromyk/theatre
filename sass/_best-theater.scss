@@ -107,3 +107,51 @@
     margin-top: 126px;
   }
 }
+
+@media (min-width: 576px) {
+  .best-theater .list {
+    margin-left: 60px;
+  }
+  .best-theater-desc {
+    width: 388px;
+    font-size: 29px;
+
+    &::before {
+      top: 190px;
+      left: 245px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .best-theater .list {
+    margin-left: 0px;
+  }
+  .best-theater-desc::before {
+    left: 220px;
+  }
+  .best-theater-desc {
+    width: 450px;
+    margin-left: 58px;
+    font-size: 34px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1920px) {
+  .best-theater {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best-theater-container {
+    margin-left: 190px;
+  }
+  .best-theater-desc {
+    margin-left: 103px;
+  }
+  .best-theater-desc::before {
+    font-size: 36px;
+    left: 264px;
+  }
+}

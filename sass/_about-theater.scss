@@ -48,10 +48,6 @@
   }
 }
 
-.our-performance .title {
-  margin-top: 80px;
-}
-
 .carousel {
   margin-top: 60px;
   margin-bottom: 75px;
@@ -74,5 +70,62 @@
     & li:not(:last-child) {
       margin-right: 50px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-theater .title {
+    padding-top: 90px;
+  }
+  .about-theater-wrapper {
+    display: flex;
+  }
+  .about-theater-first-item {
+    width: 445px;
+    text-align: left;
+    margin-right: 30px;
+  }
+  .about-theater-second-item .sub-title {
+    margin-top: 60px;
+  }
+  .about-svg-list {
+    flex-direction: column;
+    align-items: center;
+    & li:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 25px;
+    }
+  }
+  .carousel {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-theater .title {
+    padding-top: 150px;
+  }
+  .theater {
+    margin-top: 100px;
+  }
+  .about-theater-second-item .sub-title {
+    margin-top: 100px;
+  }
+  .carousel {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .about-theater-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-theater-image {
+    margin-top: 100px;
+    margin-left: 70px;
   }
 }

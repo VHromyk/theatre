@@ -11,8 +11,10 @@
   @media (min-width: 730px) {
     width: 730px;
   }
-
-  @media (min-width: 1150px) {
+  @media (min-width: 992px) {
+    width: 730px;
+  }
+  @media (min-width: 1920px) {
     width: 1150px;
   }
 }

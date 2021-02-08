@@ -2,5 +2,40 @@
   text-align: center;
 }
 
-@media (min-width: 576px) {
+.our-performance .title {
+  margin-top: 80px;
+}
+
+.carousel-item {
+  height: 550px;
+  width: 442px;
+}
+
+@media (min-width: 768px) {
+  .our-performance .title {
+    margin-top: 90px;
+  }
+  .carousel-item {
+    height: 550px;
+    width: 442px;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-performance .title {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .carousel {
+    display: none;
+  }
+  .trial-carousel {
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  .front-carouse-element {
+    height: 550px;
+  }
 }
