@@ -13,8 +13,7 @@ menuCloseRef.addEventListener("click", () => {
   headerWrapRef.classList.toggle("is-open");
 });
 
-if (document.documentElement.clientWidth > 1919) {
-  ourPerformanceRef.classList.remove("container-box");
-  ourPerformanceRef.classList.add("large-container");
-  console.log(document.documentElement.clientWidth);
+if (document.documentElement.clientWidth < 1920) {
+  ourPerformanceRef.classList.add("container-box");
+  ourPerformanceRef.classList.remove("large-container");
 }

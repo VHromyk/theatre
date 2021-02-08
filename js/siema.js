@@ -24,7 +24,7 @@ const ourPerformance = new Siema({
     576: 1.3, // 2 items for viewport wider than 800px
     730: 1.6, // 2 items for viewport wider than 800px
     1240: 1.9, // 3 items for viewport wider than 1240px
-    1919: 4, // 3 items for viewport wider than 1240px
+    2100: 4.5, // 3 items for viewport wider than 1240px
     2200: 5.5, // 3 items for viewport wider than 1240px
   },
   startIndex: 0,
