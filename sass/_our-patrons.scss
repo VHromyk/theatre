@@ -75,7 +75,11 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85));
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 0.65),
+    rgba(51, 51, 51, 0.65)
+  );
 }
 
 .our-performance-el:hover,
