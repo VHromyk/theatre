@@ -1012,6 +1012,18 @@ input {
   margin-left: 150px;
 }
 
+.our-performance-el:hover .our-performance-text,
+.our-performance-el:focus .our-performance-text {
+  opacity: 0;
+  transition: 400ms;
+}
+
+.our-performance-el:hover .our-performance-date,
+.our-performance-el:focus .our-performance-date {
+  opacity: 0;
+  transition: 400ms;
+}
+
 @media (max-width: 767px) {
   .our-performance-carousel {
     margin-top: 60px;

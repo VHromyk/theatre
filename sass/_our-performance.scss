@@ -15,6 +15,18 @@
   margin-left: 150px;
 }
 
+.our-performance-el:hover,
+.our-performance-el:focus {
+  .our-performance-text {
+    opacity: 0;
+    transition: 400ms;
+  }
+  .our-performance-date {
+    opacity: 0;
+    transition: 400ms;
+  }
+}
+
 @media (max-width: 767px) {
   .our-performance-carousel {
     margin-top: 60px;
