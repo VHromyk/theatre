@@ -44,7 +44,13 @@
     color: #d1a954;
   }
 }
-
+.header-menu-list li a {
+  &:hover,
+  &:focus {
+    color: #d1a954;
+    transition: 400ms;
+  }
+}
 .social-list {
   margin-top: 89px;
   margin-left: 80px;
