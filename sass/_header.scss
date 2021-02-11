@@ -133,6 +133,10 @@
   }
 }
 
+.hero-image-wrapper img {
+  background-size: cover;
+}
+
 .is-open {
   transform: translateX(0%);
   transition-property: transform;

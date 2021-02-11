@@ -18,7 +18,7 @@
     background: #444444;
     border-style: solid;
     border-width: 1px;
-    width: 230px;
+    // max-width: 230px;
     height: 35px;
     font-weight: 600;
     font-size: 12px;
@@ -145,25 +145,68 @@
   left: 35px;
 }
 
-// &::before {
-//   transition: 600ms;
-//   transition-delay: 400ms;
-//   display: block;
-//   background: url(../image/sprite.svg#search);
-// }
-// &::after {
-//   opacity: 0;
-//   transition: 600ms;
-// }
+@media (min-width: 320px) {
+  .our-patrons-list {
+    li input {
+      width: 130px;
+    }
+  }
+  .our-patrons-textarea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+  }
+  .adress {
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .phone-list li:last-child {
+    margin-top: 25px;
+  }
+  .adress-list {
+    font-size: 14px;
+    text-align: end;
+  }
+}
+
+@media (min-width: 375px) {
+  .our-patrons-list {
+    li input {
+      width: 150px;
+    }
+  }
+  .our-patrons-textarea {
+    width: 320px;
+  }
+}
+
+@media (min-width: 530px) {
+  .our-patrons-list {
+    & li:nth-child(odd) {
+      margin-right: 20px;
+    }
+    li input {
+      width: 230px;
+    }
+  }
+  .our-patrons-textarea {
+    width: 480px;
+  }
+}
 
 @media (max-width: 575px) {
   .our-patrons-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+
+    & li:nth-child(odd) {
+      margin-right: 20px;
+    }
   }
-  .our-patrons-list li:not(:last-child) {
+  .our-patrons-list li:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
   .adress {
@@ -172,9 +215,9 @@
   .phone-list li:not(:last-child) {
     margin-bottom: 25px;
   }
-  .adress-list {
-    margin-top: 25px;
-  }
+  // .adress-list {
+  //   margin-top: 25px;
+  // }
   .adress-list li:not(:last-child) {
     margin-bottom: 25px;
   }
@@ -201,13 +244,14 @@
   .our-patrons-textarea {
     margin-left: auto;
     margin-right: auto;
-    max-width: 509px;
+    width: 510px;
     display: block;
   }
   .our-patrons-list li:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
   .adress {
+    font-size: 16px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -215,12 +259,14 @@
   .phone-list li:last-child {
     margin-top: 25px;
   }
+  .adress-list li:not(:last-child) {
+    margin-bottom: 25px;
+  }
   .adress-list {
+    font-size: 16px;
     text-align: end;
   }
-  .adress-list li:last-child {
-    margin-top: 25px;
-  }
+
   .underfooter {
     display: flex;
     justify-content: space-between;
@@ -242,6 +288,12 @@
 }
 
 @media (min-width: 768px) {
+  .our-patrons-list {
+    li input {
+      width: 180px;
+    }
+  }
+
   .our-patrons .btn {
     margin-top: 0px;
   }

@@ -1,7 +1,7 @@
 const widthWiewPort = document.documentElement.clientWidth;
 
-if (widthWiewPort < 576) {
-  countPage = 1;
+if (widthWiewPort <= 576) {
+  countPage = 2;
 } else if (widthWiewPort > 576 && widthWiewPort < 767) {
   countPage = 2;
 } else if (widthWiewPort > 768 && widthWiewPort < 1919) {
@@ -37,3 +37,14 @@ const ourPerformance = new Siema({
   loop: false,
   rtl: false,
 });
+
+const headerSlider = new Siema({
+  selector: ".hero-image-wrapper",
+});
+
+document
+  .querySelector(".prev")
+  .addEventListener("click", () => headerSlider.prev());
+document
+  .querySelector(".next")
+  .addEventListener("click", () => headerSlider.next());

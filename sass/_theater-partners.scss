@@ -27,6 +27,22 @@
   }
 }
 
+@media (min-width: 320px) {
+  .slider-element .first,
+  .slider-element .second {
+    width: 120px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 480px) {
+  .slider-element .first,
+  .slider-element .second {
+    width: 200px;
+    height: 97px;
+  }
+}
+
 @media (max-width: 575px) {
   .large-slider {
     & .slider-element {
